@@ -1,25 +1,38 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.6.33723.286
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework2", "Homework2\Homework2.csproj", "{C242223D-DEE5-4A94-A6D9-4AC6188A1975}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C242223D-DEE5-4A94-A6D9-4AC6188A1975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C242223D-DEE5-4A94-A6D9-4AC6188A1975}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C242223D-DEE5-4A94-A6D9-4AC6188A1975}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C242223D-DEE5-4A94-A6D9-4AC6188A1975}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6908E91C-A8BE-4376-A883-3C6E3D111332}
-	EndGlobalSection
-EndGlobal
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Homework2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            int age;
+            string work;
+            int numberFingers;
+            char plus;
+            string rightAnswer;
+
+            Console.WriteLine("Добро пожаловать в лучший допросник, введите ваше имя: ");
+            name = Convert.ToString(Console.ReadLine());
+
+            Console.Write("Отлично " + name + " укажите ваш возраст: ");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Потрясающе!!! " + name + " укажите где вы работаете: ");
+            work = Convert.ToString(Console.ReadLine());
+
+            Console.Write("Круто " + name + "!!! А теперь укажите общие количество ваших пальцев: ");
+            numberFingers = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Очень хорошо!!! " + name + " может подскажите правильный ответ на прошлое ДЗ? Это был 0 ??? ");
+            rightAnswer  = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine($"И того получилось что у вас примерно {numberFingers} пальцев в ваши {age} лет. И вы обязательно поставите гигантский плюс этому ДЗ");
+            Console.WriteLine("Заранее спасибо за +");
+            plus = char.Parse(Console.ReadLine());  
